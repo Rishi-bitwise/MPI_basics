@@ -22,9 +22,9 @@ int main(int argc, char**argv)
 		for (int i=1;i<size;i++)
 		{
 			MPI_Recv(recvbuf, 50 ,	MPI_CHAR, i, 1, MPI_COMM_WORLD, &status);
-			printf("THis is the message received by process 0: %s\n", recvbuf);
+			printf("This is the message received by process 0: %s\n", recvbuf);
 		}
-		printf("His this is process 0 signing off");
+		printf("Hi this is process 0 signing off");
 	}
 
 	MPI_Finalize();
